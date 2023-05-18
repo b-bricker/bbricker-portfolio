@@ -44,11 +44,11 @@ export class CloudfrontStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
 
-    this.logBucket = new Bucket(this, 'cf-log-bucket', {
-      autoDeleteObjects: true,
-      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
-    });
+    // this.logBucket = new Bucket(this, 'cf-log-bucket', {
+    //   autoDeleteObjects: true,
+    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+    //   removalPolicy: cdk.RemovalPolicy.DESTROY,
+    // });
 
     this.waf = new CfnWebACL(this, 'cloudfront-waf', {
       defaultAction: {
@@ -90,7 +90,7 @@ export class CloudfrontStack extends cdk.Stack {
       },
       defaultRootObject: 'index.html',
       domainNames: [cloudfrontDomainName],
-      enableLogging: true,
+      // enableLogging: true,
       errorResponses: [
         {
           httpStatus: 404,
@@ -98,7 +98,7 @@ export class CloudfrontStack extends cdk.Stack {
           responsePagePath: '/index.html',
         },
       ],
-      logBucket: this.logBucket,
+      // logBucket: this.logBucket,
       webAclId: this.waf.attrArn,
     });
 
