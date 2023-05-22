@@ -1,6 +1,7 @@
 import Footer from './components/footer';
 import Header from './components/header';
 import { styled } from 'styled-components';
+import './main.css';
 
 const Paragraph = styled.p`
   width: 80%;
@@ -21,6 +22,8 @@ const Main = styled.main`
   align-items: center;
   width: 100%;
   padding: 0px;
+  background-color: var(--primary-color-2);
+  color: var(--secondary-color-4);
 `;
 
 const App = (): JSX.Element => (
@@ -30,15 +33,17 @@ const App = (): JSX.Element => (
       <Title>Hi, I&apos;m Ben!</Title>
       <Paragraph>
         I am a full stack developer. I enjoy working with TypeScript in React
-        and Node.
+        and Node. I also love to dive into automation, CI/CD, and creating
+        highly scalable and available cloud native systems.
       </Paragraph>
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus
-        tristique nisl et cursus. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Integer sed pulvinar lorem. Praesent et augue ut urna
-        accumsan congue. Aenean aliquam arcu convallis mi ultricies, luctus
-        ultricies metus molestie. Integer nec erat nunc. Curabitur ultricies
-        accumsan metus et facilisis.
+        I started my journey in development while deployed with the U.S. Army. I
+        spent my free time learning the basics with FreeCodeCamp and Mozilla
+        Developer Network. When I came home I went to Virginia Commonwealth
+        University and got a degree in Computer Science. I also got a minor in
+        German for fun. Outside of work I try to travel as much as possible with
+        my family, run a lot, try new vegetarian recipes, and continue learning
+        languages - right now I&apos;m working on Swedish.
       </Paragraph>
     </Main>
     <Footer />
