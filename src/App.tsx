@@ -32,9 +32,9 @@ const App = (): JSX.Element => (
     <Main>
       <Title>Hi, I&apos;m Ben!</Title>
       <Paragraph>
-        I am a full stack developer. I enjoy working with TypeScript in React
-        and Node. I also love to dive into automation, CI/CD, and creating
-        highly scalable and available cloud native systems.
+        I am a web developer. I enjoy working with TypeScript in React and Node.
+        I also love to dive into automation, CI/CD, and creating highly scalable
+        and available cloud native systems.
       </Paragraph>
       <Paragraph>
         I started my journey in development while deployed with the U.S. Army. I
