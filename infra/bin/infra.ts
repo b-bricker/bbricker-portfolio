@@ -5,7 +5,7 @@ import { CloudfrontStack } from '../lib/cloudfront-stack';
 
 const app = new cdk.App();
 
-new CloudfrontStack(app, 'cloudfront-stack', {
+new CloudfrontStack(app, 'bbricker-portfolio-cloudfront-stack', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION,
